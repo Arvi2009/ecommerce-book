@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keranjang - Fashion E-Commerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.jpg" alt="Book E-Commerce Logo" style="height: 40px; vertical-align: middle; margin-right: 8px;" />
+        Keranjang
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="products.html">Produk</a></li>
+        <li><a href="cart.html" class="active">Keranjang</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h2>Keranjang Belanja</h2>
+      <div class="cart-items">
+        <!-- Daftar produk yang ditambahkan akan muncul di sini -->
+      </div>
+      <div class="cart-summary">
+        <p>Total Harga: <span id="total-price">Rp0</span></p>
+      </div>
+      <form id="payment-form">
+        <h3>Metode Pembayaran</h3>
+        <label>
+          <input type="radio" name="payment-method" value="Transfer Bank" required />
+          Transfer Bank
+        </label>
+        <label>
+          <input type="radio" name="payment-method" value="COD" />
+          COD
+        </label>
+        <label>
+          <input type="radio" name="payment-method" value="QRIS" />
+          QRIS
+        </label>
+        <button type="submit" class="btn btn-primary">Lanjut</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Book E-Commerce. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
