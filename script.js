@@ -127,7 +127,7 @@ function handlePaymentForm() {
     const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
     message += `- Total: Rp${total.toLocaleString('id-ID')}%0A- Metode Pembayaran: ${paymentMethod}`;
 
-    const phoneNumber = '6281234567890';
+    const phoneNumber = '6281911009245';
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
 
     window.open(url, '_blank');
